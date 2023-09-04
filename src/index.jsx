@@ -17,6 +17,7 @@ function MyComponent() {
     'italic',
     'underline',
     'link',
+    'style: null'
   ]
 useEffect(()=>{
   console.log(value)
@@ -29,6 +30,7 @@ useEffect(()=>{
         formats={formats}
         value={value}
         onChange={setValue}
+        dangerouslyPasteHTML={value}
       ></ReactQuill>
     </div>
   )
